@@ -1,0 +1,247 @@
+/* Services Page Styles */
+
+.services-page {
+    background-color: #1a1a1a;
+  }
+  
+  /* Banner Section */
+  .page-banner {
+    background-color: #0c3247;
+    background-image: linear-gradient(rgba(12, 50, 71, 0.9), rgba(12, 50, 71, 0.9)), url('../assets/banner-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .page-banner h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .page-banner h1::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #0099cc;
+  }
+  
+  /* Services Grid Section */
+  .services-grid-section {
+    padding: 4rem 0;
+  }
+  
+  .services-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .service-card.full-card {
+    display: flex;
+    background-color: #0c3247;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .service-image {
+    flex: 0 0 50%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .service-card:hover .service-image img {
+    transform: scale(1.05);
+  }
+  
+  .service-content {
+    flex: 0 0 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .service-content h2 {
+    color: #0099cc;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.8rem;
+  }
+  
+  .service-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0099cc;
+  }
+  
+  .service-features ul {
+    padding-left: 1.5rem;
+  }
+  
+  .service-features li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    color: #fff;
+  }
+  
+  .service-features li::before {
+    content: '✓';
+    color: #0099cc;
+    position: absolute;
+    left: -1.5rem;
+  }
+  
+  /* Certification Section */
+  .certification-section {
+    padding: 4rem 0;
+  }
+  
+  .certification-content {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+  }
+  
+  .certification-intro {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .certification-list {
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .certification-list li {
+    margin-bottom: 1rem;
+    position: relative;
+    color: #fff;
+  }
+  
+  .certification-list li::before {
+    content: '•';
+    color: #0099cc;
+    position: absolute;
+    left: -1rem;
+    font-size: 1.5rem;
+  }
+  
+  .standards-logos {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+  }
+  
+  .standard-logo {
+    text-align: center;
+  }
+  
+  .standard-logo img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.5rem;
+  }
+  
+  .standard-logo span {
+    display: block;
+    color: #0099cc;
+    font-weight: 500;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    padding: 4rem 0;
+    background-color: #1a1a1a;
+    background-image: linear-gradient(rgba(26, 26, 26, 0.9), rgba(26, 26, 26, 0.9)), url('../assets/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    color: #0099cc;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-content p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .service-card.full-card,
+    .service-card.reverse {
+      flex-direction: column;
+    }
+    
+    .service-image,
+    .service-content {
+      flex: 0 0 100%;
+    }
+    
+    .service-image {
+      height: 250px;
+    }
+    
+    .standards-logos {
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .page-banner {
+      padding: 4rem 0;
+    }
+    
+    .page-banner h1 {
+      font-size: 2.5rem;
+    }
+    
+    .service-content {
+      padding: 2rem;
+    }
+    
+    .service-content h2 {
+      font-size: 1.8rem;
+    }
+    
+    .certification-intro {
+      font-size: 1.1rem;
+    }
+  }

@@ -1,0 +1,478 @@
+/* Hero Section */
+.hero-section {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #0099cc;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hero-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    max-width: 500px;
+    z-index: 1;
+  }
+  
+  .truck-img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    padding: 4rem 0;
+  }
+  
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+  
+  .section-heading h2 {
+    color: #fff;
+    position: relative;
+    padding-bottom: 1rem;
+  }
+  
+  .section-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #0099cc;
+  }
+  
+  .mission-box, .cooperation-box {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-icon, .cooperation-icon {
+    flex: 0 0 80px;
+    margin-right: 2rem;
+  }
+  
+  .mission-icon img, .cooperation-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .mission-content, .cooperation-content {
+    flex: 1;
+  }
+  
+  .mission-content h3, .cooperation-content h3 {
+    color: #0099cc;
+    margin-bottom: 1rem;
+  }
+  
+  .companies {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  /* Materials Section */
+  .materials-section {
+    padding: 4rem 0;
+  }
+  
+  .service-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .feature {
+    background-color: rgba(12, 50, 71, 0.7);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .feature h4 {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  /* Geography Section */
+  .geography-section {
+    padding: 4rem 0;
+    position: relative;
+  }
+  
+  .world-map {
+    position: relative;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 3rem;
+  }
+  
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .map-point {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #0099cc;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .map-point::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 153, 204, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0.8;
+    }
+    70% {
+      transform: translate(-50%, -50%) scale(1.2);
+      opacity: 0;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.8);
+      opacity: 0;
+    }
+  }
+  
+  .point-label {
+    position: absolute;
+    white-space: nowrap;
+    color: #fff;
+    font-weight: 500;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .europe {
+    top: 30%;
+    left: 48%;
+  }
+  
+  .asia {
+    top: 35%;
+    left: 65%;
+  }
+  
+  .america {
+    top: 40%;
+    left: 25%;
+  }
+  
+  .australia {
+    top: 65%;
+    left: 80%;
+  }
+  
+  .geography-features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+  }
+  
+  .geo-feature {
+    flex: 0 0 45%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .geo-icon {
+    flex: 0 0 60px;
+    margin-right: 1.5rem;
+  }
+  
+  .geo-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .geo-content h4 {
+    color: #0099cc;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Services Preview Section */
+  .services-preview-section {
+    padding: 4rem 0;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .service-card:hover .service-image img {
+    transform: scale(1.1);
+  }
+  
+  .service-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+    color: #fff;
+  }
+  
+  .service-content h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .service-link {
+    display: inline-block;
+    color: #0099cc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .service-link:hover {
+    color: #fff;
+  }
+  
+  /* Advantages Preview Section */
+  .advantages-preview-section {
+    padding: 4rem 0;
+  }
+  
+  .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  
+  .advantage-card {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .advantage-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .advantage-number {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(0, 153, 204, 0.2);
+  }
+  
+  .advantage-card h3 {
+    color: #0099cc;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  /* Contact Preview Section */
+  .contact-preview-section {
+    padding: 4rem 0;
+  }
+  
+  .contact-preview-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .contact-preview-text {
+    flex: 0 0 45%;
+  }
+  
+  .contact-preview-text h2 {
+    color: #0099cc;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-preview-image {
+    flex: 0 0 45%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-preview-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .hero-image {
+      width: 35%;
+    }
+    
+    .service-features, .advantages-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      padding: 3rem 0;
+    }
+    
+    .hero-content {
+      max-width: 100%;
+      text-align: center;
+    }
+    
+    .hero-buttons {
+      justify-content: center;
+    }
+    
+    .hero-image {
+      display: none;
+    }
+    
+    .mission-box, .cooperation-box {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .mission-icon, .cooperation-icon {
+      margin-right: 0;
+      margin-bottom: 1.5rem;
+    }
+    
+    .service-features, .advantages-grid, .services-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .geo-feature {
+      flex: 0 0 100%;
+    }
+    
+    .contact-preview-content {
+      flex-direction: column;
+    }
+    
+    .contact-preview-text, .contact-preview-image {
+      flex: 0 0 100%;
+    }
+    
+    .contact-preview-text {
+      margin-bottom: 2rem;
+    }
+  }

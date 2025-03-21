@@ -1,0 +1,402 @@
+/* About Page Styles */
+
+.about-page {
+    background-color: #1a1a1a;
+  }
+  
+  /* Banner Section - reusing styles from other pages */
+  
+  /* Company Overview Section */
+  .company-overview-section {
+    padding: 4rem 0;
+  }
+  
+  .overview-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+  
+  .overview-text {
+    flex: 1;
+  }
+  
+  .overview-text p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .overview-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .overview-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Experience Section */
+  .experience-section {
+    padding: 4rem 0;
+  }
+  
+  .experience-stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+  }
+  
+  .stat-item {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0099cc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-text {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+  
+  .experience-timeline {
+    margin-top: 4rem;
+  }
+  
+  .timeline-heading {
+    margin-bottom: 3rem;
+  }
+  
+  .timeline-heading h3 {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.8rem;
+  }
+  
+  .timeline-heading h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #0099cc;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #0099cc;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+  
+  .timeline-date {
+    flex: 0 0 80px;
+    background-color: #0099cc;
+    color: #fff;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+    align-self: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .timeline-content {
+    flex: 0 0 calc(50% - 50px);
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 2px;
+    background-color: #0099cc;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content::before {
+    left: -20px;
+  }
+  
+  .timeline-item:nth-child(even) .timeline-content::before {
+    right: -20px;
+  }
+  
+  .timeline-content h4 {
+    color: #0099cc;
+    margin-bottom: 0.5rem;
+  }
+  
+  .timeline-content p {
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* Mission and Values Section */
+  .mission-values-section {
+    padding: 4rem 0;
+  }
+  
+  .mission-values-content {
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .mission-box, .values-box {
+    flex: 1;
+    background-color: #0c3247;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mission-box p {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .values-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .values-list li {
+    margin-bottom: 1.5rem;
+  }
+  
+  .values-list h4 {
+    color: #0099cc;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .values-list h4::before {
+    content: '✓';
+    margin-right: 0.8rem;
+    color: #0099cc;
+  }
+  
+  .values-list p {
+    color: #fff;
+    margin: 0;
+    padding-left: 1.8rem;
+  }
+  
+  /* Team Section */
+  .team-section {
+    padding: 4rem 0;
+  }
+  
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .team-member {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .member-image {
+    flex: 0 0 40%;
+    overflow: hidden;
+  }
+  
+  .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .member-info {
+    flex: 1;
+    padding: 1.5rem;
+  }
+  
+  .member-info h3 {
+    color: #0099cc;
+    margin-bottom: 0.3rem;
+  }
+  
+  .member-position {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .member-desc {
+    color: #ddd;
+    margin: 0;
+  }
+  
+  /* Partners Section */
+  .partners-section {
+    padding: 4rem 0;
+  }
+  
+  .partners-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .partner-logo {
+    flex: 0 0 calc(16.666% - 2rem);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .partner-logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .partner-logo img {
+    width: 100%;
+    max-width: 120px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 0.8rem;
+  }
+  
+  .partner-logo span {
+    display: block;
+    color: #fff;
+    font-size: 0.9rem;
+  }
+  
+  /* Call to Action Section */
+  .cta-section {
+    padding: 4rem 0;
+    text-align: center;
+  }
+  
+  .cta-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    color: #fff;
+    margin-bottom: 1.5rem;
+  }
+  
+  .cta-content p {
+    color: #ddd;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
+    .overview-content {
+      flex-direction: column;
+    }
+    
+    .mission-values-content {
+      flex-direction: column;
+    }
+    
+    .team-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .partner-logo {
+      flex: 0 0 calc(33.333% - 2rem);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .experience-stats {
+      flex-direction: column;
+    }
+    
+    .timeline::before {
+      left: 20px;
+    }
+    
+    .timeline-item,
+    .timeline-item:nth-child(odd) {
+      flex-direction: column;
+    }
+    
+    .timeline-date {
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+    
+    .timeline-content {
+      flex: 0 0 100%;
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+      display: none;
+    }
+    
+    .team-member {
+      flex-direction: column;
+    }
+    
+    .member-image {
+      flex: 0 0 200px;
+    }
+    
+    .partner-logo {
+      flex: 0 0 calc(50% - 2rem);
+    }
+  }
