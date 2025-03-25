@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { LanguageContext } from '../utils/LanguageContext';
 import { getText } from '../utils/localization';
 import '../styles/header.css';
+import logo from '../assets/logo Atlas blue.png';
 
 const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -24,24 +25,14 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
+        {/* Left section - Logo */}
         <div className="logo">
           <Link to="/">
-            <img src="/assets/logo_blue.png" alt="Atlas Link Company" />
+            <img src={logo} alt="Atlas Link Company" />
           </Link>
         </div>
 
-        <div className="language-switcher desktop-only">
-          <button onClick={toggleLanguage} className="language-btn">
-            {language === 'ru' ? 'EN' : 'RU'}
-          </button>
-        </div>
-
-        <div className="hamburger mobile-only" onClick={toggleMenu}>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-
+        {/* Center section - Navigation */}
         <nav className={`main-nav ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li className={isActive('/about')}>
@@ -63,6 +54,19 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+
+        {/* Right section - Language switcher and mobile menu */}
+        <div className="language-switcher desktop-only">
+          <button onClick={toggleLanguage} className="language-btn">
+            {language === 'ru' ? 'EN' : 'RU'}
+          </button>
+        </div>
+
+        <div className="hamburger mobile-only" onClick={toggleMenu}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
   );
