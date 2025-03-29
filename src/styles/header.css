@@ -13,6 +13,7 @@
   justify-content: space-between; /* This distributes space properly */
   align-items: center;
   width: 100%;
+  padding: 0 27%;
 }
 
 /* Left section with logo */
@@ -34,7 +35,6 @@
 /* Center section with navigation */
 .main-nav {
   display: flex;
-  justify-content: center;
   flex-grow: 1; /* Take available space */
 }
 
@@ -110,6 +110,7 @@
   cursor: pointer;
 }
 
+/* Hamburger animation styles */
 .hamburger span {
   display: block;
   width: 22px;
@@ -117,11 +118,44 @@
   background-color: #fff;
   margin-bottom: 4px;
   border-radius: 1px;
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+/* When menu is open, transform hamburger to X */
+.hamburger.open span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .mobile-only {
   display: none;
+}
+
+@media (max-width: 1820px) {
+  .header-container {
+    padding: 0 22%;
+  }
+}
+
+
+@media (max-width: 1441px) {
+  .header-container {
+    padding: 0 20%;
+  }
+}
+
+@media (max-width: 1081px) {
+  .header-container {
+    padding: 0 15%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -182,3 +216,4 @@
     font-size: 0.95rem;
   }
 }
+

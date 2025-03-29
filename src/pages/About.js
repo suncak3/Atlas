@@ -36,7 +36,7 @@ const About = () => {
               </p>
             </div>
             <div className="overview-image">
-              <img src="/assets/about-company.jpg" alt="Atlas Link Company" />
+              <img src="https://i.postimg.cc/vBRJm6RB/logo-black.jpg"/>
             </div>
           </div>
         </div>

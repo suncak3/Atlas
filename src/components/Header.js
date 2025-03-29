@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="container header-container">
+      <div className="header-container">
         {/* Left section - Logo */}
         <div className="logo">
           <Link to="/">
@@ -62,7 +62,7 @@ const Header = () => {
           </button>
         </div>
 
-        <div className="hamburger mobile-only" onClick={toggleMenu}>
+        <div className={`hamburger mobile-only ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>

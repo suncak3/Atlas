@@ -21,9 +21,9 @@ const Services = () => {
           <div className="services-grid">
             {/* Service 1: Logistics */}
             <div className="service-card full-card">
-              <div className="service-image">
-                <img src="/assets/service-logistics.jpg" alt="Logistics" />
-              </div>
+              {/*<div className="service-image">*/}
+              {/*  <img src="https://i.postimg.cc/MHWcBHk0/image.png" alt="Logistics" />*/}
+              {/*</div>*/}
               <div className="service-content">
                 <h2>{getText(language, 'services.logistics.title')}</h2>
                 <div className="service-features">

@@ -64,7 +64,7 @@
   
   .service-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s;
   }
@@ -75,10 +75,12 @@
   
   .service-content {
     flex: 0 0 50%;
-    padding: 3rem;
+    padding: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: url("https://i.postimg.cc/bN1yP8Kp/image.png");
+    background-size: 100%;
   }
   
   .service-content h2 {

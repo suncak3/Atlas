@@ -22,7 +22,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/assets/truck.png" alt="Logistics Truck" className="truck-img" />
+            <img src="https://i.postimg.cc/Fzh9SG1z/image-removebg-preview-33.png" alt="Logistics Truck" className="truck-img" />
           </div>
         </div>
       </section>
@@ -51,7 +51,7 @@ const Home = () => {
               <p className="companies">{getText(language, 'home.cooperation.companies')}</p>
             </div>
             <div className="cooperation-icon">
-              <img src="/assets/handshake-icon.png" alt="Cooperation" />
+              <img src="https://i.postimg.cc/CKFgg0ng/Handshake.png" alt="Cooperation" />
             </div>
           </div>
         </div>
@@ -68,42 +68,42 @@ const Home = () => {
           <div className="service-features">
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/oil-icon.png" alt="Oil Industry" />
+                <img src="https://i.postimg.cc/pVc7zqmS/Oil-Industry.png" alt="Oil Industry" />
               </div>
               <h4>{getText(language, 'cargo.understanding.title')}</h4>
             </div>
             
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/cargo-icon.png" alt="Large Cargo" />
+                <img src="https://i.postimg.cc/zBPPqStn/Truck.png" alt="Large Cargo" />
               </div>
               <h4>{getText(language, 'cargo.delivery.title')}</h4>
             </div>
             
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/quality-icon.png" alt="Quality Standards" />
+                <img src="https://i.postimg.cc/vmZJMB8w/Quality.png" alt="Quality Standards" />
               </div>
               <h4>{getText(language, 'cargo.standards.title')}</h4>
             </div>
             
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/control-icon.png" alt="Cargo Control" />
+                <img src="https://i.postimg.cc/fyTxYJPb/Control.png" alt="Cargo Control" />
               </div>
               <h4>{getText(language, 'cargo.control.title')}</h4>
             </div>
             
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/optimization-icon.png" alt="Optimization" />
+                <img src="https://i.postimg.cc/BbkXtb9k/Optimization.png" alt="Optimization" />
               </div>
               <h4>{getText(language, 'cargo.optimization.title')}</h4>
             </div>
             
             <div className="feature">
               <div className="feature-icon">
-                <img src="/assets/solution-icon.png" alt="Solutions" />
+                <img src="https://i.postimg.cc/DwVSTScb/Solutions.png" alt="Solutions" />
               </div>
               <h4>{getText(language, 'cargo.solutions.title')}</h4>
             </div>
