@@ -1,0 +1,101 @@
+.container-map {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.map-content{
+    margin: auto;
+}
+
+.svg-map {
+    display: block;
+    margin: auto;
+    overflow-x: hidden;
+}
+circle{
+    width: 20px;
+    height: 20px;
+}
+
+.land {
+    fill: #1894cc;
+    fill-opacity: 1;
+    stroke:white;
+    stroke-opacity: 1;
+    stroke-width:0.5;
+}
+.location-marker {
+    position: absolute;
+    transform: translate(-50%, -100%);
+}
+.location-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.location-name{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    padding: 5px 15px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.location-name:hover{
+    scale: 1.1;
+}
+
+.icon-text-map{
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #3498db;
+    rotate: 90deg;
+}
+
+.color-text-map-item{
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+}
+
+.text-container-map{
+    background-color: #1a1a1a;
+    display: flex;
+}
+
+.text-container-map-item{
+    margin-left: 10%;
+    display: block;
+    background-color: #000000;
+    padding: 20px 60px;
+    border-radius: 15px;
+    margin-top: -180px;
+}
+
+@media (max-width: 471px) {
+
+    .map-section{
+        overflow-x: hidden;
+    }
+    .map-section svg{
+        width: 150%;
+        margin-left: -30%;
+    }
+    .location-name{
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+    .text-container-map{
+        justify-content: center;
+    }
+    .text-container-map-item{
+        margin-left: 0;
+        padding: 15px 20px;
+        z-index: 999;
+    }
+}

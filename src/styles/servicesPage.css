@@ -1,0 +1,135 @@
+.services-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 4rem 20%;
+}
+
+.services-page-grid .service-page-features{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+ }
+
+.services-page-grid-section h4{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.certification-section .section-heading{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    margin-bottom: 0;
+}
+.certification-section .certification-content{
+    padding: 5rem 20%;
+}
+.certification-intro{
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.certification-list{
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.standards-logos{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+
+.standards-logos .standard-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #0c3247;
+    border-radius: 5px;
+    padding: 20px;
+    transition: 300ms;
+    cursor: pointer;
+}
+.standards-logos .standard-logo:hover{
+    background-color: #e3f7ff;
+    scale: 1.05;
+}
+
+
+.standards-logos .standard-logo img{
+    width: 80px;
+    height: 80px;
+}
+
+@media (min-width: 2559px) {
+    .certification-section .certification-content {
+        padding: 5rem 25%;
+    }
+}
+
+@media (max-width: 1780px) {
+    .services-page-grid{
+        padding: 4rem 15%;
+    }
+}
+
+@media (max-width: 1401px) {
+    .services-page-grid{
+        padding: 4rem 5%;
+    }
+    .flip-card-inner{
+        font-size: 2rem;
+    }
+    .service-page-features{
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .certification-section .certification-content {
+        padding: 5rem 10%;
+    }
+}
+
+@media (max-width: 1001px) {
+    .services-page-grid{
+        padding: 4rem 2%;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+    .certification-section .certification-content {
+        padding: 3rem 5%;
+    }
+    .certification-intro {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .services-page-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .certification-intro {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 431px) {
+    .standards-logos .standard-logo img {
+        width: 60px;
+        height: 60px;
+    }
+    .standards-logos .standard-logo span{
+        display: flex;
+        font-size: .75rem;
+        margin-top: 10px;
+    }
+    .certification-list {
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+}

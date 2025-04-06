@@ -20,10 +20,11 @@
     z-index: 0;
   }
 
-  .container{
+  .container-first{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0 20%;
   }
 
   .hero-content {
@@ -48,7 +49,7 @@
     max-width: 500px;
     z-index: 1;
   }
-  
+
   .truck-img {
     width: 100%;
     height: auto;
@@ -79,20 +80,30 @@
     height: 3px;
     background-color: #0099cc;
   }
-  
+
+  .container-second{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20%;
+  }
+  .text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .mission-box, .cooperation-box {
     display: flex;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 2rem;
     border-radius: 8px;
-    margin-bottom: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .mission-icon, .cooperation-icon {
     flex: 0 0 80px;
-    margin-right: 2rem;
+    margin: 1rem;
   }
   
   .mission-icon img, .cooperation-icon img {
@@ -108,7 +119,30 @@
     color: #0099cc;
     margin-bottom: 1rem;
   }
-  
+
+  .second-block{
+    display: flex;
+  }
+
+  .text-box{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-mission-content{
+    font-size: 1.75rem;
+    color: #0099cc;
+    font-weight: 600;
+  }
+  .train-image{
+    height: auto;
+    width: 100%;
+    background: url("../../public/assets/train.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 10px 10px 0;
+  }
+
   .companies {
     font-size: 1.2rem;
     font-weight: 700;
@@ -116,7 +150,7 @@
   
   /* Materials Section */
   .materials-section {
-    padding: 4rem 0;
+    padding: 4rem 5%;
   }
   
   .service-features {
@@ -257,93 +291,22 @@
     align-items: center;
     margin-bottom: 2rem;
   }
-  
-  .geo-icon {
-    flex: 0 0 60px;
-    margin-right: 1.5rem;
+
+  .geo-icon{
+    margin-right: 1rem;
   }
-  
-  .geo-icon img {
-    width: 60px;
-    height: 60px;
-  }
-  
+
   .geo-content h4 {
     color: #0099cc;
     margin-bottom: 0.5rem;
   }
-  
-  /* Services Preview Section */
-  .services-preview-section {
-    padding: 4rem 0;
-  }
-  
-  .services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  
-  .service-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    height: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .service-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  
-  .service-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-  }
-  
-  .service-card:hover .service-image img {
-    transform: scale(1.1);
-  }
-  
-  .service-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    z-index: 1;
-    color: #fff;
-  }
-  
-  .service-content h3 {
-    margin-bottom: 1rem;
-  }
-  
-  .service-link {
-    display: inline-block;
-    color: #0099cc;
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .service-link:hover {
-    color: #fff;
-  }
-  
+
+
   /* Advantages Preview Section */
   .advantages-preview-section {
-    padding: 4rem 0;
+    padding: 4rem 15%;
   }
-  
+
   .advantages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -357,6 +320,7 @@
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    cursor: pointer;
   }
   
   .advantage-card:hover {
@@ -380,7 +344,8 @@
   
   /* Contact Preview Section */
   .contact-preview-section {
-    padding: 4rem 0;
+    padding: 4rem 15%;
+    background: #000000;
   }
   
   .contact-preview-content {
@@ -419,15 +384,86 @@
     width: 100%;
     height: auto;
   }
-  
+
+
+
+
+@media (max-width: 1820px) {
+  .container-first {
+    padding: 0 22%;
+  }
+}
+
+@media (max-width: 1758px) {
+  .text-mission-content {
+    font-size: 1.5rem;
+  }
+  .container-icon{
+    margin-right: 0rem;
+  }
+}
+
+@media (max-width: 1670px) {
+  .container-first {
+    padding: 0 15%;
+  }
+  .container-second{
+    padding: 30px 15%;
+  }
+  .advantages-preview-section, .contact-preview-section  {
+    padding: 4rem 10%;
+  }
+}
+@media (max-width: 1441px) {
+  .text-mission-content {
+    font-size: 1.25rem;
+  }
+  .advantages-preview-section, .contact-preview-section  {
+    padding: 4rem 5%;
+  }
+}
+
+@media (max-width: 1321px) {
+  .container-second, .container-first {
+    padding: 30px 10%;
+  }
+  .container-services {
+    padding: 30px 10%;
+  }
+}
+
+
+@media (max-width: 1168px) {
+  .container-second, .container-first {
+    padding: 30px 5%;
+  }
+  .container-services {
+    padding: 30px 5%;
+  }
+  .advantages-preview-section {
+    padding: 4rem 2%;
+  }
+  .advantage-card h3{
+    width: 250px;
+  }
+}
   /* Media Queries */
   @media (max-width: 992px) {
+    .cooperation-box{
+      padding: 1.25rem
+    }
+    .container-second, .container-first {
+      padding: 30px 3%;
+    }
+
     .hero-image {
       width: 35%;
     }
-    
     .service-features, .advantages-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .geography-section{
+      padding: 0;
     }
   }
   
@@ -448,7 +484,11 @@
     .hero-image {
       display: none;
     }
-    
+
+    .container-second, .container-first {
+      padding: 30px 15%;
+    }
+
     .mission-box, .cooperation-box {
       flex-direction: column;
       text-align: center;
@@ -457,6 +497,9 @@
     .mission-icon, .cooperation-icon {
       margin-right: 0;
       margin-bottom: 1.5rem;
+    }
+    .train-image{
+      display: none;
     }
     
     .service-features, .advantages-grid, .services-grid {
@@ -479,3 +522,13 @@
       margin-bottom: 2rem;
     }
   }
+
+@media (max-width: 431px) {
+  .container-second, .container-first {
+    padding: 30px 5%;
+  }
+  body{
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+}

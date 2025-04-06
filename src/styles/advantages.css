@@ -35,7 +35,7 @@
   
   /* Main Advantages Section */
   .main-advantages-section {
-    padding: 4rem 0;
+    padding: 4rem 15%;
   }
   
   .advantages-grid {
@@ -96,6 +96,7 @@
   .advantage-details ul {
     padding-left: 1.5rem;
     margin: 0;
+    list-style: none;
   }
   
   .advantage-details li {
@@ -122,6 +123,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
+    padding: 2rem 15%;
   }
   
   .financial-card {
@@ -131,7 +133,11 @@
     text-align: center;
     transition: transform 0.3s;
   }
-  
+
+  .financial-card h3{
+    font-size: 1.75rem;
+  }
+
   .financial-card:hover {
     transform: translateY(-5px);
   }
@@ -164,7 +170,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-top: 3rem;
+    padding: 3rem 20%;
   }
   
   .testimonial-card {
@@ -172,10 +178,11 @@
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
   }
   
   .testimonial-content {
-    padding: 2rem;
+    padding: 3rem 2rem 8rem 2rem;
     position: relative;
   }
   
@@ -201,6 +208,9 @@
     align-items: center;
     padding: 1.5rem 2rem;
     background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
   
   .author-image {
@@ -250,14 +260,55 @@
     font-size: 1.1rem;
     margin-bottom: 2rem;
   }
+
+  @media (max-width: 1921px){
+    .testimonials-grid {
+      padding: 3rem 15%;
+    }
+  }
   
-  /* Media Queries */
-  @media (max-width: 992px) {
+  @media (max-width: 1801px) {
+    .main-advantages-section {
+      padding: 4rem 10%;
+    }
+    .financial-grid{
+      padding: 2rem 10%;
+    }
+    .testimonials-grid {
+      padding: 3rem 10%;
+    }
+  }
+
+  @media (max-width: 1601px) {
+    .main-advantages-section {
+      padding: 4rem 5%;
+    }
+    .financial-grid{
+      padding: 2rem 5%;
+    }
+    .testimonials-grid {
+      padding: 3rem 5%;
+    }
+  }
+
+  @media (max-width: 1361px) {
+    .main-advantages-section {
+      padding: 4rem 2%;
+    }
+    .advantages-grid {
+      gap: 1rem;
+    }
     .advantages-grid,
     .financial-grid,
     .testimonials-grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
+  }
+  
+  
+  /* Media Queries */
+  @media (max-width: 992px) {
   }
   
   @media (max-width: 768px) {
@@ -275,3 +326,25 @@
       grid-template-columns: 1fr;
     }
   }
+
+@media (max-width: 500px) {
+  .advantage-card h3 {
+    font-size: 1rem;
+  }
+  .advantage-card p {
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  .advantage-icon {
+    margin-bottom: 0.5rem;
+  }
+  .financial-grid{
+    padding: 2rem 2%;
+  }
+  .financial-card h3 {
+    font-size: 1.25rem;
+  }
+  .testimonials-grid {
+    padding: 1rem 2%;
+  }
+}

@@ -46,6 +46,9 @@ export const translations = {
         },
         specialCargo: {
           title: "Перевозка специфических грузов",
+        },
+        documentation:{
+          title: "Комплексная поддержка документации",
         }
       },
       // Geography section
@@ -132,6 +135,9 @@ export const translations = {
         phone: "+7 7712 68 34 74",
         email: "info@atlogist.com",
         logistEmail: "logist@atlogist.com"
+      },
+      alertCard:{
+        title: "Наведите курсором на карточку услуги или нажмите на нее для просмотра!",
       }
     },
     en: {
@@ -179,6 +185,9 @@ export const translations = {
         },
         specialCargo: {
           title: "Transportation of specific cargo",
+        },
+        documentation:{
+          title: "Comprehensive documentation support"
         }
       },
       // Geography section
@@ -265,6 +274,9 @@ export const translations = {
         phone: "+7 7712 68 34 74",
         email: "info@atlogist.com",
         logistEmail: "logist@atlogist.com"
+      },
+      alertCard:{
+        title: "Hover over the service card or click on it to view it!",
       }
     }
   };

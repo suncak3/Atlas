@@ -23,7 +23,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">01</div>
               <div className="advantage-icon">
-                <img src="/assets/experience-icon.png" alt="Experience" />
+                <img src="/assets/icons/Experience.png" alt="Experience" />
               </div>
               <h3>{getText(language, 'advantages.reasons.experience.title')}</h3>
               <p>{getText(language, 'advantages.reasons.experience.text')}</p>
@@ -40,7 +40,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">02</div>
               <div className="advantage-icon">
-                <img src="/assets/approach-icon.png" alt="Approach" />
+                <img src="/assets/icons/Approach.png" alt="Approach" />
               </div>
               <h3>{getText(language, 'advantages.reasons.approach.title')}</h3>
               <p>{getText(language, 'advantages.reasons.approach.text')}</p>
@@ -57,7 +57,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">03</div>
               <div className="advantage-icon">
-                <img src="/assets/reliability-icon.png" alt="Reliability" />
+                <img src="/assets/icons/Reliability.png" alt="Reliability" />
               </div>
               <h3>{getText(language, 'advantages.reasons.reliability.title')}</h3>
               <p>{getText(language, 'advantages.reasons.reliability.text')}</p>
@@ -74,7 +74,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">04</div>
               <div className="advantage-icon">
-                <img src="/assets/financial-icon.png" alt="Financial Terms" />
+                <img src="/assets/icons/Financial.png" alt="Financial Terms" />
               </div>
               <h3>{getText(language, 'advantages.reasons.financialTerms.title')}</h3>
               <p>{getText(language, 'advantages.reasons.financialTerms.text')}</p>
@@ -91,7 +91,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">05</div>
               <div className="advantage-icon">
-                <img src="/assets/trust-icon.png" alt="Trust" />
+                <img src="/assets/icons/Trust.png" alt="Trust" />
               </div>
               <h3>{getText(language, 'advantages.reasons.trust.title')}</h3>
               <p>{getText(language, 'advantages.reasons.trust.text')}</p>
@@ -108,7 +108,7 @@ const Advantages = () => {
             <div className="advantage-card">
               <div className="advantage-number">06</div>
               <div className="advantage-icon">
-                <img src="/assets/transparency-icon.png" alt="Transparency" />
+                <img src="/assets/icons/Transparency.png" alt="Transparency" />
               </div>
               <h3>{getText(language, 'advantages.reasons.transparency.title')}</h3>
               <p>{getText(language, 'advantages.reasons.transparency.text')}</p>
@@ -134,7 +134,7 @@ const Advantages = () => {
           <div className="financial-grid">
             <div className="financial-card">
               <div className="financial-icon">
-                <img src="/assets/payment-icon.png" alt="Payment Options" />
+                <img src="/assets/icons/Payment.png" alt="Payment Options" />
               </div>
               <h3>{language === 'ru' ? 'Гибкие условия взаиморасчетов' : 'Flexible Payment Terms'}</h3>
               <p>{language === 'ru' ? 'Предоставляем простые и удобные варианты взаиморасчетов, используя разные валюты и схемы платежей' : 'We provide simple and convenient payment options, using different currencies and payment schemes'}</p>
@@ -142,7 +142,7 @@ const Advantages = () => {
             
             <div className="financial-card">
               <div className="financial-icon">
-                <img src="/assets/calculator-icon.png" alt="Cost Calculation" />
+                <img src="/assets/icons/Cost.png" alt="Cost Calculation" />
               </div>
               <h3>{language === 'ru' ? 'Индивидуальный расчет стоимости' : 'Individual Cost Calculation'}</h3>
               <p>{language === 'ru' ? 'Подбираем наиболее выгодные и эффективные решения для вашего бизнеса, учитывая все ваши требования' : 'We select the most profitable and effective solutions for your business, taking into account all your requirements'}</p>
@@ -150,7 +150,7 @@ const Advantages = () => {
             
             <div className="financial-card">
               <div className="financial-icon">
-                <img src="/assets/budget-icon.png" alt="Budget Planning" />
+                <img src="/assets/icons/Budget.png" alt="Budget Planning" />
               </div>
               <h3>{language === 'ru' ? 'Эффективное планирование бюджета' : 'Effective Budget Planning'}</h3>
               <p>{language === 'ru' ? 'Помогаем эффективно планировать и распределять бюджет благодаря прозрачному ценообразованию' : 'We help you effectively plan and allocate your budget thanks to transparent pricing'}</p>
@@ -173,7 +173,7 @@ const Advantages = () => {
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/client1.jpg" alt="Client" />
+                  <img src="/assets/profile/profile_1.jpg" alt="Client" />
                 </div>
                 <div className="author-info">
                   <h4>ТШО / TCO</h4>
@@ -188,7 +188,7 @@ const Advantages = () => {
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/client2.jpg" alt="Client" />
+                  <img src="/assets/profile/profile_2.jpg" alt="Client" />
                 </div>
                 <div className="author-info">
                   <h4>КПО / KPO</h4>
@@ -203,7 +203,7 @@ const Advantages = () => {
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/client3.jpg" alt="Client" />
+                  <img src="/assets/profile/profile_3.jpg" alt="Client" />
                 </div>
                 <div className="author-info">
                   <h4>NCOC</h4>

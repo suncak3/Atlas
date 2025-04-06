@@ -10,10 +10,10 @@
 
 .header-container {
   display: flex;
-  justify-content: space-between; /* This distributes space properly */
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 27%;
+  padding: 0 20%;
 }
 
 /* Left section with logo */
@@ -145,22 +145,32 @@
   }
 }
 
-
-@media (max-width: 1441px) {
+@media (max-width: 1670px) {
   .header-container {
-    padding: 0 20%;
+    padding: 0 15%;
   }
 }
 
-@media (max-width: 1081px) {
+
+@media (max-width: 1321px) {
   .header-container {
-    padding: 0 15%;
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 1168px) {
+  .header-container {
+    padding: 0 5%;
   }
 }
 
 @media (max-width: 768px) {
   .header {
     padding: 0.4rem 0;
+  }
+
+  .header-container {
+    padding: 0 10%;
   }
   
   .logo img {

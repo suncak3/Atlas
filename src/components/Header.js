@@ -3,7 +3,6 @@ import { Link, useLocation } from 'react-router-dom';
 import { LanguageContext } from '../utils/LanguageContext';
 import { getText } from '../utils/localization';
 import '../styles/header.css';
-import logo from '../assets/logo Atlas blue.png';
 
 const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -28,7 +27,7 @@ const Header = () => {
         {/* Left section - Logo */}
         <div className="logo">
           <Link to="/">
-            <img src={logo} alt="Atlas Link Company" />
+            <img src="./assets/logo_blue.png" alt="Atlas Link Company" />
           </Link>
         </div>
 

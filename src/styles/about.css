@@ -8,7 +8,8 @@
   
   /* Company Overview Section */
   .company-overview-section {
-    padding: 4rem 0;
+    padding: 4rem 15%;
+    background-color: #000000;
   }
   
   .overview-content {
@@ -49,7 +50,7 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 3rem 0;
+    margin: 3rem 15%;
   }
   
   .stat-item {
@@ -173,14 +174,30 @@
   
   /* Mission and Values Section */
   .mission-values-section {
-    padding: 4rem 0;
+    padding: 4rem 15%;
   }
   
   .mission-values-content {
     display: flex;
     gap: 3rem;
   }
-  
+
+  .mission-values-content .mission-box{
+    display: block;
+  }
+
+  .mission-values-content .mission-box h2{
+    text-align: center;
+  }
+
+  .mission-values-content .mission-box .link-mission-box{
+    display: flex;
+    justify-content: center;
+  }
+  .mission-values-content .mission-box .link-mission-box .btn{
+    margin-top: 6rem;
+  }
+
   .mission-box, .values-box {
     flex: 1;
     background-color: #0c3247;
@@ -230,24 +247,37 @@
   
   .team-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-top: 3rem;
+    padding: 4rem 15%;
   }
   
   .team-member {
     display: flex;
+    flex-direction: column;
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 5px #00000099;
+    position: relative;
+    transition-duration: 300ms;
   }
-  
+  .team-member:hover{
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+    transform: scale(1.05);
+  }
+
+
   .member-image {
-    flex: 0 0 40%;
+    flex: 0 0 60%;
     overflow: hidden;
   }
-  
+  .member-image-1{
+    background-image: url("../../public/assets/man_1.jpg");
+    background-size: cover;
+  }
   .member-image img {
     width: 100%;
     height: 100%;
@@ -286,6 +316,7 @@
     justify-content: center;
     gap: 2rem;
     margin-top: 3rem;
+    padding: 2rem 20%;
   }
   
   .partner-logo {
@@ -339,7 +370,83 @@
     justify-content: center;
     gap: 1rem;
   }
-  
+
+@media (max-width: 1860px) {
+  .team-grid{
+      padding: 4rem 10%;
+  }
+}
+
+@media (max-width: 1800px) {
+  .team-grid{
+    padding: 4rem 10%;
+  }
+  .member-info h3{
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 1633px) {
+  .team-grid {
+    padding: 4rem 5%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .mission-values-section {
+    padding: 4rem 10%;
+  }
+  .member-info{
+    padding: 1rem;
+  }
+}
+@media (max-width: 1367px) {
+  .mission-values-section {
+    padding: 4rem 5%;
+  }
+  .team-grid{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 600px);
+    gap: 3rem;
+    padding: 4rem 15%;
+  }
+  .member-image{
+    flex: 0 0 70%;
+  }
+}
+
+@media (max-width: 1321px) {
+  .company-overview-section {
+    padding: 4rem 10%;
+  }
+  .experience-stats{
+    margin: 3rem 10%;
+  }
+  .partners-logos {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 1168px) {
+  .company-overview-section {
+    padding: 4rem 5%;
+  }
+  .experience-stats{
+    margin: 3rem 5%;
+  }
+  .mission-values-section {
+    padding: 4rem 2%;
+  }
+  .mission-values-content {
+    gap: 1rem;
+  }
+  .team-grid {
+    padding: 2rem 5%;
+  }
+
+}
+
+
   /* Media Queries */
   @media (max-width: 992px) {
     .overview-content {
@@ -348,6 +455,7 @@
     
     .mission-values-content {
       flex-direction: column;
+      gap: 2rem;
     }
     
     .team-grid {
@@ -357,9 +465,20 @@
     .partner-logo {
       flex: 0 0 calc(33.333% - 2rem);
     }
+    .team-grid{
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 30%;
+    }
+    .member-image {
+      height: 300px;
+    }
+    .member-image img{
+      height: 320px;
+    }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 770px) {
     .experience-stats {
       flex-direction: column;
     }
@@ -398,4 +517,46 @@
     .partner-logo {
       flex: 0 0 calc(50% - 2rem);
     }
+
+    .team-grid{
+      padding: 2rem 20%;
+    }
+    .member-image{
+      flex: 0 0 calc(50% - 1rem);
+    }
   }
+
+@media (max-width: 491px) {
+  .overview-image img {
+    width: 300px;
+  }
+  .timeline{
+    max-width: 450px;
+    margin-left: 10px;
+  }
+  .timeline-content{
+    width: 90%;
+  }
+  .mission-box p{
+    font-size: .95rem;
+  }
+  .overview-text .section-heading h2{
+    font-size: 1.75rem;
+  }
+  .team-grid{
+    padding: 2rem 5%;
+  }
+  .member-image{
+    flex: 0 0 calc(70% - 1rem);
+  }
+}
+
+@media (min-width: 2550px) {
+  .company-overview-section {
+    padding: 4rem 20%;
+  }
+  .mission-values-section {
+    padding: 4rem 20%;
+  }
+
+}

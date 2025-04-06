@@ -17,8 +17,7 @@ const About = () => {
       </section>
 
       {/* Company Overview */}
-      <section className="company-overview-section section-dark">
-        <div className="container">
+      <section className="company-overview-section">
           <div className="overview-content">
             <div className="overview-text">
               <div className="section-heading">
@@ -36,10 +35,9 @@ const About = () => {
               </p>
             </div>
             <div className="overview-image">
-              <img src="https://i.postimg.cc/vBRJm6RB/logo-black.jpg"/>
+              <img src="https://i.postimg.cc/vBRJm6RB/logo-black.jpg" alt="Logo"/>
             </div>
           </div>
-        </div>
       </section>
 
       {/* Company Experience */}
@@ -163,6 +161,9 @@ const About = () => {
                   ? 'Создавать надежное стратегическое партнерство, обеспечивать высокое качество на каждом этапе сотрудничества и предоставлять инновационные решения в сфере логистики, таможенного оформления и сертификации.'
                   : 'To create a reliable strategic partnership, ensure high quality at every stage of cooperation, and provide innovative solutions in the field of logistics, customs clearance, and certification.'}
               </p>
+              <div className="link-mission-box">
+                <Link to="/contacts" className="btn btn-secondary">{language === 'ru' ? 'Связаться с нами' : 'Contact Us'}</Link>
+              </div>
             </div>
             
             <div className="values-box">
@@ -203,52 +204,52 @@ const About = () => {
           <div className="team-grid">
             <div className="team-member">
               <div className="member-image">
-                <img src="/assets/team-ceo.jpg" alt="CEO" />
+                <img src="./assets/man_1.jpg" alt="CEO"/>
               </div>
               <div className="member-info">
                 <h3>{language === 'ru' ? 'Иван Петров' : 'Ivan Petrov'}</h3>
                 <p className="member-position">{language === 'ru' ? 'Генеральный директор' : 'CEO'}</p>
                 <p className="member-desc">
                   {language === 'ru'
-                    ? 'Более 15 лет опыта в логистике и управлении международными перевозками.'
-                    : 'More than 15 years of experience in logistics and international transportation management.'}
+                      ? 'Более 15 лет опыта в логистике и управлении международными перевозками.'
+                      : 'More than 15 years of experience in logistics and international transportation management.'}
                 </p>
               </div>
             </div>
-            
-            <div className="team-member">
+
+            <div className="team-member" >
               <div className="member-image">
-                <img src="/assets/team-logistics.jpg" alt="Logistics Director" />
+                <img src="./assets/man_2.jpg" alt="Logistics Director"/>
               </div>
               <div className="member-info">
                 <h3>{language === 'ru' ? 'Алексей Смирнов' : 'Alexey Smirnov'}</h3>
                 <p className="member-position">{language === 'ru' ? 'Директор по логистике' : 'Logistics Director'}</p>
                 <p className="member-desc">
                   {language === 'ru'
-                    ? 'Эксперт в области международной логистики с опытом более 10 лет.'
-                    : 'Expert in international logistics with more than 10 years of experience.'}
+                      ? 'Эксперт в области международной логистики с опытом более 10 лет.'
+                      : 'Expert in international logistics with more than 10 years of experience.'}
                 </p>
               </div>
             </div>
-            
+
             <div className="team-member">
               <div className="member-image">
-                <img src="/assets/team-customs.jpg" alt="Customs Director" />
+                <img src="./assets/woman_1.jpg" alt="Customs Director"/>
               </div>
               <div className="member-info">
                 <h3>{language === 'ru' ? 'Мария Иванова' : 'Maria Ivanova'}</h3>
                 <p className="member-position">{language === 'ru' ? 'Директор по таможенному оформлению' : 'Customs Director'}</p>
                 <p className="member-desc">
                   {language === 'ru'
-                    ? 'Более 8 лет опыта в таможенном оформлении и сертификации.'
-                    : 'More than 8 years of experience in customs clearance and certification.'}
+                      ? 'Более 8 лет опыта в таможенном оформлении и сертификации.'
+                      : 'More than 8 years of experience in customs clearance and certification.'}
                 </p>
               </div>
             </div>
-            
-            <div className="team-member">
+
+            <div className="team-member" >
               <div className="member-image">
-                <img src="/assets/team-client.jpg" alt="Client Relations Director" />
+                <img src="./assets/woman_2.jpg" alt="Client Relations Director" />
               </div>
               <div className="member-info">
                 <h3>{language === 'ru' ? 'Елена Козлова' : 'Elena Kozlova'}</h3>
@@ -274,27 +275,27 @@ const About = () => {
           
           <div className="partners-logos">
             <div className="partner-logo">
-              <img src="/assets/partner-tco.png" alt="TCO" />
+              <img src="/assets/partners/TCO.png" alt="TCO" />
               <span>TCO / ТШО</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partner-kpo.png" alt="KPO" />
+              <img src="/assets/partners/Karachaganak.png" alt="KPO" />
               <span>KPO / КПО</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partner-ncoc.png" alt="NCOC" />
+              <img src="/assets/partners/NCOC.png" alt="NCOC" />
               <span>NCOC</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partner-oil.png" alt="Oil Company" />
+              <img src="/assets/partners/KMG.png" alt="Oil Company" />
               <span>{language === 'ru' ? 'Нефтяная компания' : 'Oil Company'}</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partner-gas.png" alt="Gas Company" />
+              <img src="/assets/partners/QazaqGaz.png" alt="Gas Company" />
               <span>{language === 'ru' ? 'Газовая компания' : 'Gas Company'}</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partner-logistics.png" alt="Logistics Partner" />
+              <img src="/assets/partners/RL.png" alt="Logistics Partner" />
               <span>{language === 'ru' ? 'Логистический партнер' : 'Logistics Partner'}</span>
             </div>
           </div>

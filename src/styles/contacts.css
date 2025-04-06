@@ -8,7 +8,7 @@
 
 /* Contact Information Section */
 .contact-info-section {
-  padding: 4rem 0;
+  padding: 4rem 15%;
 }
 
 .contact-cards {
@@ -203,7 +203,7 @@
 
 /* Business Hours Section */
 .business-hours-section {
-  padding: 4rem 0;
+  padding: 4rem 20%;
 }
 
 .business-hours-content {
@@ -254,6 +254,39 @@
   display: block;
 }
 
+@media (min-width: 2559px) {
+  .contact-info-section {
+    padding: 4rem 20%;
+  }
+}
+
+@media (max-width: 1850px) {
+  .contact-info-section {
+    padding: 4rem 10%;
+  }
+  .business-hours-section {
+    padding: 4rem 15%;
+  }
+}
+
+@media (max-width: 1441px) {
+  .contact-info-section {
+    padding: 4rem 5%;
+  }
+  .business-hours-section {
+    padding: 4rem 10%;
+  }
+}
+
+@media (max-width: 1281px) {
+  .contact-info-section {
+    padding: 4rem 2%;
+  }
+  .business-hours-section {
+    padding: 4rem 5%;
+  }
+}
+
 /* Media Queries */
 @media (max-width: 992px) {
   .contact-cards {
@@ -270,6 +303,10 @@
   
   .hours-info, .hours-image {
     width: 100%;
+  }
+
+  .business-hours-section {
+    padding: 4rem 2%;
   }
 }
 
