@@ -6,6 +6,7 @@ import '../styles/Home.css'
 import WorldMap from "../components/WorldMap";
 import '../styles/services.css'
 
+
 const Home = () => {
   const { language } = useContext(LanguageContext);
 
@@ -23,7 +24,7 @@ const Home = () => {
             </div>
           </div>
           <div className="hero-image">
-            <img src="https://i.postimg.cc/Fzh9SG1z/image-removebg-preview-33.png" alt="Logistics Truck" className="truck-img" />
+            <img src="/assets/Truck.png" alt="Logistics Truck" className="truck-img" />
           </div>
         </div>
       </section>

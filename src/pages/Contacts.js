@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { LanguageContext } from '../utils/LanguageContext';
 import { getText } from '../utils/localization';
+import AtlasGoogleMap from '../components/AtlasGoogleMap'; // Import the Google Maps component
 import '../styles/contacts.css';
 
 const Contacts = () => {
@@ -184,14 +185,10 @@ const Contacts = () => {
         </div>
       </section>
 
-      {/* Map Section */}
+      {/* Map Section - Now using the Google Maps component */}
       <section className="map-section">
         <div className="map-container">
-          {/* This would normally be replaced with an actual Google Maps or similar embed */}
-          <div className="map-placeholder">
-            <h3>{language === 'ru' ? 'Карта будет здесь' : 'Map will be displayed here'}</h3>
-            <p>{language === 'ru' ? 'Для интеграции карты требуется API ключ Google Maps' : 'Google Maps API key is required for map integration'}</p>
-          </div>
+          <AtlasGoogleMap />
         </div>
       </section>
 

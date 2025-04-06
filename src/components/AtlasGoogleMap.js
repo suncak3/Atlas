@@ -1,52 +1,17 @@
 import React from 'react';
-import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-const containerStyle = {
-    width: '100%',
-    height: '450px',
-    border: '0'
-};
-
-// These coordinates match your iframe (approximate location in Astana/Nur-Sultan, Kazakhstan)
-const center = {
-    lat: 51.144942252545405,
-    lng: 71.41223834076101
-};
-
-const options = {
-    disableDefaultUI: false,
-    zoomControl: true,
-    mapTypeId: 'satellite' // This matches the satellite view in your iframe
-};
-
-function MyGoogleMap() {
-    const { isLoaded } = useJsApiLoader({
-        id: 'google-map-script',
-        googleMapsApiKey: "AIzaSyABgD2zlVZ35oW3ThB5Y7mYphp25jKiHFo" // You need to replace this with your actual API key
-    });
-
-    const [map, setMap] = React.useState(null);
-
-    const onLoad = React.useCallback(function callback(map) {
-        setMap(map);
-    }, []);
-
-    const onUnmount = React.useCallback(function callback() {
-        setMap(null);
-    }, []);
-
-    return isLoaded ? (
-        <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={17} // Approximately matching your iframe zoom level
-            onLoad={onLoad}
-            onUnmount={onUnmount}
-            options={options}
-        >
-            { /* You can add child components here such as markers */ }
-        </GoogleMap>
-    ) : <div>Loading...</div>;
+function AtlasGoogleMap() {
+    return (
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2503.8918851175775!2d71.41004707638941!3d51.14494237172883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDA4JzQxLjgiTiA3McKwMjQnNDQuMCJF!5e0!3m2!1sen!2sus!4v1615293800516!5m2!1sen!2sus"
+            width="100%" 
+            height="450" 
+            style={{ border: 0 }} 
+            allowFullScreen="" 
+            loading="lazy"
+            title="Google Map"
+        ></iframe>
+    );
 }
 
-export default React.memo(MyGoogleMap);
+export default AtlasGoogleMap;
