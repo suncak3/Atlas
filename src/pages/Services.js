@@ -112,37 +112,6 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Certification Section */}
-      <section className="certification-section section-blue">
-          <div className="section-heading text-center">
-            <h2>{language === 'ru' ? 'Сертификация и соответствие стандартам' : 'Certification and Standards Compliance'}</h2>
-          </div>
-          <div className="certification-content">
-            <p className="certification-intro">{getText(language, 'cargo.certification.title')}</p>
-
-            <ul className="certification-list">
-              {getText(language, 'cargo.certification.list').map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-            
-            <div className="standards-logos">
-              <div className="standard-logo">
-                <img src="/assets/standard/ISO.png" alt="ISO 9001" />
-                <span>ISO 9001</span>
-              </div>
-              <div className="standard-logo">
-                <img src="/assets/standard/ASTM.png" alt="ASTM" />
-                <span>ASTM</span>
-              </div>
-              <div className="standard-logo">
-                <img src="/assets/standard/GS.png" alt="GOST" />
-                <span>GOST</span>
-              </div>
-            </div>
-          </div>
-      </section>
-
       {/* Call to Action */}
       <section className="cta-section section-dark">
         <div className="container">
