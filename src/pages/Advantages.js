@@ -130,7 +130,7 @@ const Advantages = () => {
           <div className="section-heading text-center">
             <h2>{language === 'ru' ? 'Финансовая гибкость и индивидуальный подход' : 'Financial Flexibility and Individual Approach'}</h2>
           </div>
-          
+
           <div className="financial-grid">
             <div className="financial-card">
               <div className="financial-icon">
@@ -139,7 +139,7 @@ const Advantages = () => {
               <h3>{language === 'ru' ? 'Гибкие условия взаиморасчетов' : 'Flexible Payment Terms'}</h3>
               <p>{language === 'ru' ? 'Предоставляем простые и удобные варианты взаиморасчетов, используя разные валюты и схемы платежей' : 'We provide simple and convenient payment options, using different currencies and payment schemes'}</p>
             </div>
-            
+
             <div className="financial-card">
               <div className="financial-icon">
                 <img src="/assets/icons/Cost.png" alt="Cost Calculation" />
@@ -147,7 +147,7 @@ const Advantages = () => {
               <h3>{language === 'ru' ? 'Индивидуальный расчет стоимости' : 'Individual Cost Calculation'}</h3>
               <p>{language === 'ru' ? 'Подбираем наиболее выгодные и эффективные решения для вашего бизнеса, учитывая все ваши требования' : 'We select the most profitable and effective solutions for your business, taking into account all your requirements'}</p>
             </div>
-            
+
             <div className="financial-card">
               <div className="financial-icon">
                 <img src="/assets/icons/Budget.png" alt="Budget Planning" />
@@ -165,7 +165,7 @@ const Advantages = () => {
           <div className="section-heading text-center">
             <h2>{language === 'ru' ? 'Что говорят наши клиенты' : 'What Our Clients Say'}</h2>
           </div>
-          
+
           <div className="testimonials-grid">
             <div className="testimonial-card">
               <div className="testimonial-content">
@@ -173,40 +173,40 @@ const Advantages = () => {
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/profile/profile_1.jpg" alt="Client" />
+                  <img src="/assets/partners/Lenergy.jfif" alt="Client" />
                 </div>
                 <div className="author-info">
-                  <h4>ТШО / TCO</h4>
+                  <h4>Lenergy</h4>
                   <p>{language === 'ru' ? 'Отдел логистики' : 'Logistics Department'}</p>
                 </div>
               </div>
             </div>
-            
+
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <p>"{language === 'ru' ? 'Atlas Link Company помогла нам оптимизировать логистические процессы и значительно сократить сроки доставки оборудования. Рекомендуем как профессионалов своего дела.' : 'Atlas Link Company helped us optimize logistics processes and significantly reduce equipment delivery times. We recommend them as professionals in their field.'}"</p>
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/profile/profile_2.jpg" alt="Client" />
+                  <img src="/assets/partners/ARGLogo.png" alt="Client" />
                 </div>
                 <div className="author-info">
-                  <h4>КПО / KPO</h4>
+                  <h4>ARG</h4>
                   <p>{language === 'ru' ? 'Руководитель отдела закупок' : 'Head of Procurement'}</p>
                 </div>
               </div>
             </div>
-            
+
             <div className="testimonial-card">
               <div className="testimonial-content">
                 <p>"{language === 'ru' ? 'Благодарим команду Atlas Link Company за профессиональный подход к организации сложных перевозок. Особенно ценим оперативность решения возникающих вопросов.' : 'We thank the Atlas Link Company team for their professional approach to organizing complex transportations. We especially appreciate the promptness in resolving emerging issues.'}"</p>
               </div>
               <div className="testimonial-author">
                 <div className="author-image">
-                  <img src="/assets/profile/profile_3.jpg" alt="Client" />
+                  <img src="/assets/partners/OGServices.jpg" alt="Client" />
                 </div>
                 <div className="author-info">
-                  <h4>NCOC</h4>
+                  <h4>OGServices</h4>
                   <p>{language === 'ru' ? 'Департамент транспорта' : 'Transportation Department'}</p>
                 </div>
               </div>

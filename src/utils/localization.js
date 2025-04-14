@@ -12,8 +12,8 @@ export const translations = {
       // Home page
       home: {
         hero: {
-          title: "Atlas Link Company",
-          subtitle: "Ваш надежный партнер в логистике, таможенном оформлении и сертификации"
+          title: "Atlas Link Company ",
+          subtitle: "Международная логистика из Европы, США и Азии для промпредприятий Казахстана. Надёжный партнёр по доставке, экспедированию и таможенному сопровождению."
         },
         experience: {
           title: "Более 5 лет успешной работы",
@@ -152,7 +152,7 @@ export const translations = {
       home: {
         hero: {
           title: "Atlas Link Company",
-          subtitle: "Your reliable partner in logistics, customs clearance and certification"
+          subtitle: "International logistics from Europe, the USA and Asia for industrial enterprises in Kazakhstan. A reliable partner in shipping, forwarding and customs support."
         },
         experience: {
           title: "More than 5 years of successful work",
@@ -271,9 +271,9 @@ export const translations = {
       // Contact information
       contacts: {
         title: "Contacts",
-        phone: "+7 7712 68 34 74",
+        phone: "+7 771 268 3474",
         email: "info@atlogist.com",
-        logistEmail: "logist@atlogist.com"
+        logistEmail: "info@atllogist.com"
       },
       alertCard:{
         title: "Hover over the service card or click on it to view it!",

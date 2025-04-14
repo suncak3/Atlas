@@ -80,8 +80,8 @@ const Contacts = () => {
                 <i className="icon location"></i>
               </div>
               <h3>{language === 'ru' ? 'Адрес' : 'Address'}</h3>
-              <p>{language === 'ru' ? 'Казахстан, г. Алматы' : 'Kazakhstan, Almaty'}</p>
-              <p>{language === 'ru' ? 'Бизнес-центр "Атлас"' : 'Atlas Business Center'}</p>
+              <p>{language === 'ru' ? 'Казахстан, г. Астана' : 'Kazakhstan, Astana city'}</p>
+              <p>{language === 'ru' ? 'проспект Туран 19/1, ВП-19, офис 503' : 'street Turan 19/1, office 503 '}</p>
               <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="contact-link">
                 {language === 'ru' ? 'Посмотреть на карте' : 'View on map'}
               </a>

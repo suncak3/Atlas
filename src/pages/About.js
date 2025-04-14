@@ -25,13 +25,20 @@ const About = () => {
               </div>
               <p>
                 {language === 'ru' 
-                  ? 'ATLAS LINK COMPANY – эксперт в области сертификации, логистики, оформления документов и таможенной очистки. Мы гарантируем надежность, прозрачность и высокое качество на каждом этапе сотрудничества.'
-                  : 'ATLAS LINK COMPANY is an expert in certification, logistics, document processing, and customs clearance. We guarantee reliability, transparency, and high quality at every stage of cooperation.'}
+                  ? 'ATLAS LINK COMPANY – это логистическая компания, предоставляющая международные логистические решения для промышленных предприятий.' +
+                    'Мы специализируемся на организации поставок из Европы, США, Азии и других стран в Казахстан и Центральную Азию.' +
+                    'Наша ключевая задача — организовать быструю, надёжную и полностью сопровождаемую доставку грузов: от обычных упаковок до сложных негабаритных позиций.'
+                  : 'ATLAS LINK COMPANY is a logistics company providing international logistics solutions for industrial enterprises.' +
+                    '                    "We specialize in organizing supplies from Europe, the United States, Asia and other countries to Kazakhstan and Central Asia.' +
+                    '                    "Our key task is to organize fast, reliable and fully escorted cargo delivery: from ordinary packages to complex oversized items.'}
               </p>
               <p>
                 {language === 'ru'
-                  ? 'Наша компания предоставляет полный комплекс услуг по международной логистике, включая таможенное оформление, сертификацию и документальное сопровождение грузов. Мы специализируемся на работе с нефтегазовой отраслью и понимаем все особенности и требования этого сектора.'
-                  : 'Our company provides a full range of international logistics services, including customs clearance, certification, and documentary support of cargo. We specialize in working with the oil and gas industry and understand all the features and requirements of this sector.'}
+                  ? 'Наши клиенты — это предприятия нефтегазовой отрасли, энергетики, горно-металлургического комплекса и промышленного строительства.' +
+                     +
+                    'Мы не торгуем продукцией и не предлагаем технологии. Наша зона ответственности — логистика: от момента формирования заказа у поставщика до приёмки товара клиентом на складе.'
+                  : 'Our clients are enterprises of the oil and gas industry, energy, mining and metallurgical complex and industrial construction.' +
+                    'We do not sell products or offer technology. Our area of responsibility is logistics: from the moment the order is formed from the supplier to the acceptance of the goods by the customer in the warehouse.'}
               </p>
             </div>
             <div className="overview-image">
@@ -172,20 +179,24 @@ const About = () => {
               </div>
               <ul className="values-list">
                 <li>
-                  <h4>{language === 'ru' ? 'Надежность' : 'Reliability'}</h4>
-                  <p>{language === 'ru' ? 'Мы всегда выполняем свои обязательства и соблюдаем сроки.' : 'We always fulfill our obligations and meet deadlines.'}</p>
+                  <h4>{language === 'ru' ? 'Скорость и точность' : 'Speed and accuracy'}</h4>
+                  <p>{language === 'ru' ? 'Мы ценим ваше время и знаем, что логистика — это критически важный элемент производственного процесса. Наши поставки точны и своевременны.' : 'We appreciate your time and know that logistics is a critical element of the production process. Our deliveries are accurate and timely.'}</p>
                 </li>
                 <li>
-                  <h4>{language === 'ru' ? 'Профессионализм' : 'Professionalism'}</h4>
-                  <p>{language === 'ru' ? 'Мы постоянно совершенствуем наши знания и навыки.' : 'We constantly improve our knowledge and skills.'}</p>
+                  <h4>{language === 'ru' ? 'Адаптивность' : 'Adaptability'}</h4>
+                  <p>{language === 'ru' ? 'Мы гибко перестраиваем маршруты в зависимости от внешнеэкономической ситуации, санкций, ограничений и погодных условий.' : 'We flexibly adjust routes depending on the external economic situation, sanctions, restrictions and weather conditions.'}</p>
                 </li>
                 <li>
-                  <h4>{language === 'ru' ? 'Клиентоориентированность' : 'Customer Orientation'}</h4>
-                  <p>{language === 'ru' ? 'Интересы клиентов всегда на первом месте.' : 'The interests of clients are always in the first place.'}</p>
+                  <h4>{language === 'ru' ? 'Экспертиза и глобальное партнёрство' : 'Expertise and global partnership'}</h4>
+                  <p>{language === 'ru' ? 'Работаем напрямую с логистическими агентами IATA и WCA по всему миру, что позволяет организовывать поставки в любые точки без посредников.' : 'We work directly with IATA and WCA logistics agents around the world, which allows us to arrange deliveries to any point without intermediaries.'}</p>
                 </li>
                 <li>
-                  <h4>{language === 'ru' ? 'Прозрачность' : 'Transparency'}</h4>
-                  <p>{language === 'ru' ? 'Мы предоставляем полную информацию о статусе груза на каждом этапе.' : 'We provide complete information about the status of cargo at each stage.'}</p>
+                  <h4>{language === 'ru' ? 'Прозрачность и ответственность' : 'Transparency and responsibility'}</h4>
+                  <p>{language === 'ru' ? 'Мы даём честные сроки и расставляем приоритеты в интересах клиента. Без скрытых комиссий, без задержек, без шаблонов.' : 'We give fair deadlines and set priorities in the interests of the client. No hidden fees, no delays, no templates.'}</p>
+                </li>
+                <li>
+                  <h4>{language === 'ru' ? 'Полный контроль и сопровождение' : 'Full control and support'}</h4>
+                  <p>{language === 'ru' ? 'Мы сопровождаем груз на всех этапах: от погрузки до таможенного оформления, обеспечивая прозрачную коммуникацию и безопасность.\n' : 'We accompany the cargo at all stages: from loading to customs clearance, ensuring transparent communication and security.'}</p>
                 </li>
               </ul>
             </div>
@@ -203,28 +214,16 @@ const About = () => {
           
           <div className="partners-logos">
             <div className="partner-logo">
-              <img src="/assets/partners/TCO.png" alt="TCO" />
-              <span>TCO / ТШО</span>
+              <img src="/assets/partners/OGServices.jpg" alt="OG-Services" />
+              <span>OG Services</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partners/Karachaganak.png" alt="KPO" />
-              <span>KPO / КПО</span>
+              <img src="/assets/partners/Lenergy.jfif" alt="Lenergy" />
+              <span>Lenergy</span>
             </div>
             <div className="partner-logo">
-              <img src="/assets/partners/NCOC.png" alt="NCOC" />
-              <span>NCOC</span>
-            </div>
-            <div className="partner-logo">
-              <img src="/assets/partners/KMG.png" alt="Oil Company" />
-              <span>{language === 'ru' ? 'Нефтяная компания' : 'Oil Company'}</span>
-            </div>
-            <div className="partner-logo">
-              <img src="/assets/partners/QazaqGaz.png" alt="Gas Company" />
-              <span>{language === 'ru' ? 'Газовая компания' : 'Gas Company'}</span>
-            </div>
-            <div className="partner-logo">
-              <img src="/assets/partners/RL.png" alt="Logistics Partner" />
-              <span>{language === 'ru' ? 'Логистический партнер' : 'Logistics Partner'}</span>
+              <img src="/assets/partners/ARGLogo.png" alt="ARG" />
+              <span>ARG</span>
             </div>
           </div>
         </div>
