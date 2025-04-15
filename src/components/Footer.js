@@ -34,7 +34,6 @@ const Footer = () => {
             <h4>{getText(language, 'contacts.title')}</h4>
             <p><i className="icon phone"></i> {getText(language, 'contacts.phone')}</p>
             <p><i className="icon email"></i> {getText(language, 'contacts.email')}</p>
-            <p><i className="icon email"></i> {getText(language, 'contacts.logistEmail')}</p>
             <div className="footer-social">
               <a href="#" className="social-link" aria-label="LinkedIn">
                 <i className="icon linkedin"></i>

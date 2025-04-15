@@ -214,16 +214,16 @@ const About = () => {
           
           <div className="partners-logos">
             <div className="partner-logo">
-              <img src="/assets/partners/OGServices.jpg" alt="OG-Services" />
-              <span>OG Services</span>
+              <img src="/assets/partners/OGServices.png" alt="OG-Services" />
             </div>
             <div className="partner-logo">
               <img src="/assets/partners/Lenergy.jfif" alt="Lenergy" />
-              <span>Lenergy</span>
             </div>
             <div className="partner-logo">
               <img src="/assets/partners/ARGLogo.png" alt="ARG" />
-              <span>ARG</span>
+            </div>
+            <div className="partner-logo">
+              <img src="/assets/partners/ONM.jfif" alt="ONM" />
             </div>
           </div>
         </div>

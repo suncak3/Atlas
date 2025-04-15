@@ -69,7 +69,6 @@ const Contacts = () => {
               </div>
               <h3>{language === 'ru' ? 'Email' : 'Email'}</h3>
               <p>{getText(language, 'contacts.email')}</p>
-              <p>{getText(language, 'contacts.logistEmail')}</p>
               <a href={`mailto:${getText(language, 'contacts.email')}`} className="contact-link">
                 {language === 'ru' ? 'Написать нам' : 'Email us'}
               </a>

@@ -187,7 +187,7 @@ const Advantages = () => {
                 <p>"{language === 'ru' ? 'Atlas Link Company помогла нам оптимизировать логистические процессы и значительно сократить сроки доставки оборудования. Рекомендуем как профессионалов своего дела.' : 'Atlas Link Company helped us optimize logistics processes and significantly reduce equipment delivery times. We recommend them as professionals in their field.'}"</p>
               </div>
               <div className="testimonial-author">
-                <div className="author-image">
+                <div className="author-image arg-img">
                   <img src="/assets/partners/ARGLogo.png" alt="Client" />
                 </div>
                 <div className="author-info">

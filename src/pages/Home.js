@@ -267,7 +267,7 @@ const Home = () => {
               <div className="contact-info">
                 <p><i className="icon phone"></i> {getText(language, 'contacts.phone')}</p>
                 <p><i className="icon email"></i> {getText(language, 'contacts.email')}</p>
-                <p><i className="icon email"></i> {getText(language, 'contacts.logistEmail')}</p>
+                <p><img  className="icon" src="/assets/Clock.png"/> {getText(language, 'contacts.timeTable')}</p>
               </div>
               <Link to="/contacts" className="btn btn-primary mt-3">{language === 'ru' ? 'Связаться с нами' : 'Contact Us'}</Link>
             </div>

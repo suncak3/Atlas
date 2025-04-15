@@ -133,8 +133,8 @@ export const translations = {
       contacts: {
         title: "Контакты",
         phone: "+7 7712 68 34 74",
-        email: "info@atlogist.com",
-        logistEmail: "logist@atlogist.com"
+        email: "info@atllogist.com",
+        timeTable: "Пн–Пт, с 09:00 до 18:00"
       },
       alertCard:{
         title: "Наведите курсором на карточку услуги или нажмите на нее для просмотра!",
@@ -272,8 +272,9 @@ export const translations = {
       contacts: {
         title: "Contacts",
         phone: "+7 771 268 3474",
-        email: "info@atlogist.com",
-        logistEmail: "info@atllogist.com"
+        email: "info@atllogist.com",
+        logistEmail: "info@atllogist.com",
+        timeTable: "Mn–Fr, 09:00 - 18:00"
       },
       alertCard:{
         title: "Hover over the service card or click on it to view it!",
